@@ -16,13 +16,10 @@
 <table class="table table-hover">
   <tr>
 <thead>
-<th> MONDAY </th>
-<th> TUESDAY </th>
-<th> WEDNESDAY </th>
-<th> THURSDAY </th>
-<th> FRIDAY </th>
-<th> SATURDAY </th>
-<th> SUNDAY </th>
+<th> NAME </th>
+<th> CONTACT NUMBER </th>
+<th> SLOTS </th>
+<th> DAYS</th>
 </thead>
 <tr>
 {{#each plumber}}
@@ -31,6 +28,7 @@
 <td>{{username}}</td>
 <td>{{slots}}</td>
 <td>{{contact}}</td>
+<td>{{days}}</td>
 <td> <button id='btn' onclick ='window.location.reload()' value="{{_id}}">HIRE</button> </td>
 </tbody>
 </tr>

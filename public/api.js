@@ -24,12 +24,14 @@ $.ajax({
   var name = document.querySelector('.name').value
   var password = document.querySelector('.password').value
   var contact = document.querySelector('.contact').value
+  var slot = document.querySelector('.morning').checked
 
 
   var newPlumber ={
     username: name,
     password: password,
-    contact: contact
+    contact: contact,
+    slot: slot
 }
 
 $.ajax({
