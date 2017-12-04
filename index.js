@@ -39,6 +39,7 @@ app.use(express.static('public'))
 var plumberSche = mongoose.model('plumberSche', {
   username: String,
   contact: Number,
+  email: String,
   days: Array,
   slots: Array,
   hire: String
@@ -50,6 +51,7 @@ app.post('/api/plumbers', function(req, res) {
       plumberSche.create({
         username: plumberData.username,
         contact: plumberData.contact,
+        email: plumberData.email,
         days: plumberData.days,
         slots: plumberData.slots,
         hire: plumberData.slots

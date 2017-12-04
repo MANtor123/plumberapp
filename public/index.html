@@ -10,6 +10,66 @@
 <body>
 <h1> Plumbers Availability </h1>
 
+<form class="form">
+  <div class="container">
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Register</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3> Register</h3>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input class='name' type="text" placeholder="please enter your username"> </input><br>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input class='password' type="text" placeholder="please enter password"> </input><br>
+            </div>
+            <div class="form-group">
+              <label  for="contact">Contact Details:</label>
+              <input class='contact' type="number" placeholder="please enter contact details"> </input><br>
+            </div>
+
+            <div class="form-group">
+              <label  for="email">Email Address:</label>
+              <input class='email' type="text" placeholder="please enter email address"> </input><br>
+            </div>
+
+
+            <div class="form-group">
+              <label  for="slots">Slots:</label>
+              <input type="checkbox"  class='slots' name='slots' value='Morning'> Morning</input>
+              <input type="checkbox"  class='slots' name='slots' value='Midday'> Midday</input>
+              <input type="checkbox"  class='slots' name='slots' value='Afternoon'> Afternoon</input>
+            </div>
+
+            <div class="form-group">
+              <label  for="days">Days:</label>
+              <input class='dayss' type="checkbox" name='days' value='Monday'> Monday</input>
+              <input class='dayss' type="checkbox" name='days' value='Tuesday'> Tuesday</input>
+              <input class='dayss' type="checkbox" name='days' value='Wednesday'>Wednesday</input>
+              <input class='dayss' type="checkbox" name='days' value='Thursday'>Thursday</input>
+              <input class='dayss' type="checkbox" name='days' value='Friday'>Friday</input>
+              <input class='dayss' type="checkbox" name='days' value='Saturday'>Saturday</input>
+              <input class='dayss' type="checkbox" name='days' value='Sunday'>Sunday</input>
+            </div>
+
+            <input id='reg' type="button" value="Submit"> </input>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </form>
 
 <script class='searchTemplate' type='text/x-handlebars-templates'>
 <div class="container">
@@ -18,6 +78,7 @@
 <thead>
 <th> NAME </th>
 <th> CONTACT NUMBER </th>
+<th> EMAIL ADDRESS </th>
 <th> SLOTS </th>
 <th> DAYS</th>
 </thead>
@@ -26,8 +87,9 @@
 <tr>
 <tbody>
 <td>{{username}}</td>
-<td>{{slots}}</td>
 <td>{{contact}}</td>
+<td> {{email}}<td>
+<td>{{slots}}</td>
 <td>{{days}}</td>
 <td> <button id='btn' onclick ='window.location.reload()' value="{{_id}}">HIRE</button> </td>
 </tbody>
@@ -40,61 +102,6 @@
 <div class='output'> </div>
 
 
-<form class="form">
-<div class="container">
-
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Register</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-            <h3> Register</h3>
-  <div class="form-group">
-<label for="name">Name:</label>
-    <input class='name' type="text" placeholder="please enter your username"> </input><br>
-  </div>
-  <div class="form-group">
-<label for="password">Password:</label>
-   <input class='password' type="text" placeholder="please enter password"> </input><br>
-  </div>
-  <div class="form-group">
-    <label  for="contact">Contact Details:</label>
-     <input class='contact' type="number" placeholder="please enter contact details"> </input><br>
-  </div>
-
-
-  <div class="form-group">
-    <label  for="slots">Slots:</label>
-     <input type="checkbox"  class='slots' name='slots' value='morning'> Morning</input>
-     <input type="checkbox"  class='slots' name='slots' value='midday'> Midday</input>
-     <input type="checkbox"  class='slots' name='slots' value='afternoon'> Afternoon</input>
-  </div>
-
-  <div class="form-group">
-    <label  for="days">Days:</label>
-     <input class='dayss' type="checkbox" name='days' value='monday'> Monday</input>
-     <input class='dayss' type="checkbox" name='days' value='tuesday'> Tuesday</input>
-     <input class='dayss' type="checkbox" name='days' value='wednesday'>Wednesday</input>
-     <input class='dayss' type="checkbox" name='days' value='thursday'>Thursday</input>
-     <input class='dayss' type="checkbox" name='days' value='friday'>Friday</input>
-     <input class='dayss' type="checkbox" name='days' value='saturday'>Saturday</input>
-     <input class='dayss' type="checkbox" name='days' value='sunday'>Sunday</input>
-  </div>
-
-  <input id='reg' type="button" value="Submit"> </input>
-        </div>
-    </div>
-  </div>
-
-</div>
-</form>
 
 <script src="api.js"> </script>
 </body>

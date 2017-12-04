@@ -24,24 +24,26 @@ $.ajax({
   var name = document.querySelector('.name').value
   var password = document.querySelector('.password').value
   var contact = document.querySelector('.contact').value
+  var email = document.querySelector('.email')
   var slots = document.querySelector('.slots').value
   var dayss = document.querySelector('.dayss').value
   var string = ''
   var day = ''
 $('.slots:checked').each(function(){
   var values = $(this).val();
-  string  += values;
+  string  += values + ' ';
 });
 
 $('.dayss:checked').each(function(){
   var valuess = $(this).val();
-  day += valuess;
+  day += valuess + ' ';
 });
 
   var newPlumber ={
     username: name,
     password: password,
     contact: contact,
+    email: email,
     days: day,
     slots: string
 }
