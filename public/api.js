@@ -24,7 +24,7 @@ $.ajax({
   var name = document.querySelector('.name').value
   var password = document.querySelector('.password').value
   var contact = document.querySelector('.contact').value
-  var email = document.querySelector('.email')
+  var email = document.querySelector('.email').value
   var slots = document.querySelector('.slots').value
   var dayss = document.querySelector('.dayss').value
   var string = ''
