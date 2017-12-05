@@ -46,9 +46,9 @@
 
             <div class="form-group">
               <label  for="slots">Slots:</label>
-              <input type="checkbox"  class='slots' name='slots' value='Morning'> Morning</input>
-              <input type="checkbox"  class='slots' name='slots' value='Midday'> Midday</input>
-              <input type="checkbox"  class='slots' name='slots' value='Afternoon'> Afternoon</input>
+              <input type="radio"  class='slots' name='slots' value='Morning'> Morning</input>
+              <input type="radio"  class='slots' name='slots' value='Midday'> Midday</input>
+              <input type="radio"  class='slots' name='slots' value='Afternoon'> Afternoon</input>
             </div>
 
             <div class="form-group">
@@ -80,6 +80,7 @@
 <th> EMAIL</th>
 <th> SLOTS </th>
 <th> DAYS</th>
+<th> BOOK </th>
 </thead>
 <tr>
 {{#each plumber}}
