@@ -1,4 +1,4 @@
-# plumberapp
+# Plumber Availability App
 
 The app is called plumber availability. It allows plumbers to register their contact details so that they are added to the plumber availability table. A plumber can choose if they are available to work on morning, midday or afternoon.It also allows users to book or to hire plumbers for a morning, midday or afternoon slot. The plumber should be able to see which user has booked/hired him.
 
